@@ -164,10 +164,44 @@ window.SITE_CONTENT = {
       equalContribution: true,
       links: [{ label: "arXiv", href: "https://arxiv.org/abs/2608.02403" }],
     },
+    {
+      title:
+        "Work Extraction Across a Thermodynamic Hierarchy in Quantum Many-Body Systems",
+      authors:
+        "Akihiro Hokkyo and Masahito Ueda",
+      venue: "arXiv:2608.31001 (2026)",
+      links: [{ label: "arXiv", href: "https://arxiv.org/abs/2608.31001" }],
+    },
   ],
 
   // 新しい順
   talks: [
+    {
+      date: "2026.09.16",
+      category: "domestic",
+      format: "oral",
+      title: {
+        en: "Exact Thermal Stabilizer Eigenstates at Infinite Temperature",
+        ja: "無限温度における熱的スタビライザー固有状態",
+      },
+      venue: {
+        en: "81st Annual Meeting of the Physical Society of Japan, The University of Tokyo",
+        ja: "日本物理学会 第81回年次大会 (2026年)、東京大学 駒場キャンパス",
+      },
+    },
+    {
+      date: "2026.09.01",
+      category: "international",
+      format: "oral",
+      title: {
+        en: "Work extraction from isolated quantum many-body systems: Planck's principle and beyond",
+        ja: "Work extraction from isolated quantum many-body systems: Planck's principle and beyond",
+      },
+      venue: {
+        en: "Quantum Many-body Systems out of Equilibrium: Relaxation, Thermalization, and Ergodicity Breaking, the Max Planck Institute for the Physics of Complex Systems",
+        ja: "Quantum Many-body Systems out of Equilibrium: Relaxation, Thermalization, and Ergodicity Breaking, the Max Planck Institute for the Physics of Complex Systems",
+      },
+    },
     {
       date: "2026.08.04",
       category: "domestic",
