@@ -177,6 +177,18 @@ window.SITE_CONTENT = {
   // 新しい順
   talks: [
     {
+      date: "2026.10.09",
+      category: "seminar",
+      title: {
+        en: "Entanglement Generation Beyond Quantum Theory: From Product States to Popescu-Rohrlich Boxes",
+        ja: "量子論を超えたエンタングルメント生成：積状態からPopescu-Rohrlich boxへ",
+      },
+      venue: {
+        en: "Nihon University Particle Theory Group Seminar, online",
+        ja: "日本大学素粒子論研究室セミナー、オンライン",
+      },
+    },
+    {
       date: "2026.09.16",
       category: "domestic",
       format: "oral",
