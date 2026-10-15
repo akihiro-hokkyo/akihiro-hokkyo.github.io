@@ -2,13 +2,47 @@ window.SITE_CONTENT = {
   profile: {
     name: { en: "Akihiro Hokkyo", ja: "法橋 顕広" },
     role: {
-      en: "Doctoral Student (D2), Ueda Group",
-      ja: "博士課程2年・上田研究室",
+      en: [
+    { text: "Doctoral Student (D2), " },
+    {
+      text: "Ueda Group",
+      href: "https://cat.phys.s.u-tokyo.ac.jp/",
+    },
+  ],
+      ja: [
+    { text: "博士課程2年・" },
+    {
+      text: "上田研究室",
+      href: "https://cat.phys.s.u-tokyo.ac.jp/",
+    },
+  ],
     },
     affiliation: {
-      en: "Department of Physics, Graduate School of Science, The University of Tokyo",
-      ja: "東京大学大学院理学系研究科 物理学専攻",
+  en: [
+    {
+      text: "Department of Physics",
+      href: "https://www.phys.s.u-tokyo.ac.jp/en/",
     },
+    { text: ", " },
+    {
+      text: "Graduate School of Science",
+      href: "https://www.s.u-tokyo.ac.jp/en/",
+    },
+    { text: ", The University of Tokyo" },
+  ],
+  ja: [
+    { text: "東京大学大学院" },
+    {
+      text: "理学系研究科",
+      href: "https://www.s.u-tokyo.ac.jp/",
+    },
+    { text: " " },
+    {
+      text: "物理学専攻",
+      href: "https://www.phys.s.u-tokyo.ac.jp/",
+    },
+  ],
+},
     intro: {
       en: "My research focuses on quantum many-body physics, quantum thermodynamics and statistical mechanics, and quantum foundations, primarily using analytical and rigorous methods. More broadly, I am interested in understanding to what extent empirical laws can be derived from minimal physical assumptions, and under what conditions they can break down.",
       ja: "量子多体系、量子熱統計力学、量子基礎論を中心に、主に解析的・厳密な手法を用いて研究しています。より広くは、最小限の物理的仮定から経験的な法則がどこまで導かれるのか、また、それらがどのような条件のもとで破れるのかを明らかにすることに関心があります。",
