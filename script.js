@@ -77,18 +77,47 @@
     );
   }
 
-  function renderProfile() {
-    byId("profile-role").textContent = translated(content.profile.role);
-    byId("profile-affiliation").textContent = translated(
-      content.profile.affiliation,
-    );
-    byId("profile-intro").textContent = translated(content.profile.intro);
+  function renderLinkedText(element, value) {
+  const localized = translated(value);
 
-    byId("email-link").href = `mailto:${content.profile.email}`;
-    byId("email-text").textContent = content.profile.email;
-    byId("scholar-link").href = content.profile.scholar;
-    byId("orcid-link").href = content.profile.orcid;
+  if (!Array.isArray(localized)) {
+    element.textContent = localized;
+    return;
   }
+
+  const fragment = document.createDocumentFragment();
+
+  localized.forEach((part) => {
+    if (!part.href) {
+      fragment.append(document.createTextNode(part.text));
+      return;
+    }
+
+    const anchor = make("a", "", part.text);
+    anchor.href = part.href;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+
+    fragment.append(anchor);
+  });
+
+  element.replaceChildren(fragment);
+}
+  
+  function renderProfile() {
+  renderLinkedText(byId("profile-role"), content.profile.role);
+  renderLinkedText(
+    byId("profile-affiliation"),
+    content.profile.affiliation,
+  );
+
+  byId("profile-intro").textContent = translated(content.profile.intro);
+
+  byId("email-link").href = `mailto:${content.profile.email}`;
+  byId("email-text").textContent = content.profile.email;
+  byId("scholar-link").href = content.profile.scholar;
+  byId("orcid-link").href = content.profile.orcid;
+}
 
   function appendHighlightedAuthors(parent, authors) {
     const ownName = content.profile.name.en;
